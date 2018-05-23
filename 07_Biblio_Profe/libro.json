@@ -1,0 +1,13 @@
+{
+    "titulo": "El Hobbit",
+    "autor": 
+     {
+         "nombre": "J.R.R.",
+         "apellidos":"Tolkien",
+         "origen": 
+          {
+              "ciudad" : "BlombersTown",
+              "pais": "SudAfrica"
+          } 
+     }
+}
