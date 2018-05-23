@@ -5,7 +5,7 @@ body {
 header {
     min-height: 20vh;
     background-color:maroon;
-    color: aliceblue;
+    color: rgb(43, 151, 245);
 }
 
 header h1 {
