@@ -1,0 +1,23 @@
+h3, .parrafoVerde{
+    font-size: 1.8rem;
+    font-style: italic;
+    font-weight: bold;
+}
+
+h3{
+    color: blue;
+    
+}
+
+.parrafoVerde{
+    color: lime;
+}
+
+p.parrafoVerde{
+    color: brown;
+}
+
+h2.parrafoVerde{
+    color: yellow;
+}
+
