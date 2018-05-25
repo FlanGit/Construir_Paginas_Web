@@ -1,0 +1,63 @@
+.boton{
+    width: 5rem;
+    border: 2px solid;
+    padding: 2rem;
+    border-radius: 2rem;
+    background-color: rgb(70, 191, 247);
+
+}
+.boton:hover{
+  background-color: brown;
+  color: rgb(70, 191, 247); 
+  font-weight: 900; 
+}
+
+/* Pseudo elementos :: */
+section.parte1 div.boton::first-letter{
+    font-size: 2rem;
+}
+/* Pseudo elementos :: */
+section.parte1 p::first-letter{
+    font-size: 2rem;
+    color: blue;
+}
+
+section.parte1 p::before{
+    content: "CICERON DIJO "
+}
+section.parte1 p::after{
+    content:" ... REVISADO";
+}
+
+/* CAmbio de comillas dobles "  */
+section.parte1 blockquote{
+    quotes: '\00AB' '\00BB' '\201E' '\201C';
+}
+
+section.parte1 blockquote::before{
+content: url(./mundo.png) open-quote;
+}
+section.parte1 blockquote::after{
+    content: close-quote;
+}
+
+section.parte1 p{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+}
+
+
+/* section.parte2 p:nth-child(2){
+    color: firebrick;
+}
+
+section.parte2 p:nth-of-type(1){
+    color: rgb(105, 38, 192);
+
+} */
+section.parte2 p:nth-of-type(2)::first-letter{
+    font-size: 2rem;
+    color: rgb(160, 0, 0);
+}
+
