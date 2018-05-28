@@ -1,0 +1,85 @@
+/* ANADIR SIEMPRE*/
+/*******************************/
+* {box-sizing: border-box;}   
+/*******************************/
+body {
+     margin: 10px;
+}  
+
+h1 {
+    width: 29%;
+
+    font-size: 2rem;
+    font-weight: bold;
+     color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px;
+	padding: 1rem;
+    border: 1rem; 
+    border-color: brown;
+    background-color: rgb(0, 0, 0);
+}
+
+h2{
+    margin: 6px;    
+    padding-left: 1.5rem; 
+    padding: 0.5rem;   
+    width: 24%;
+    float: left;
+    background-color: rgb(140, 247, 241);
+    border: 0px solid rgb(53, 11, 238);
+    height: 3rem;
+    overflow: auto;
+    font-weight: bold;
+
+}
+
+
+article p {
+    margin: 6px;    
+    padding: 1.5rem;    
+/*     width: calc(100%/4);*/
+    width: 24%;
+    float: left;
+
+    border: 3px solid rgb(53, 11, 238);
+    height: 25rem;
+    overflow: auto;
+
+}
+
+footer{
+    margin-left: 10px;    
+}
+/*  article p{
+    width: 20;           
+    height: 15rem;
+    overflow: auto;
+} 
+ */
+/*  p:not(:last-child) {
+    margin-right: 5%;
+}  */
+/* 
+p:first-child {  */
+    /* border-left: 1px solid;  */
+ /* } */ 
+
+    /* LOS IMPARES*/
+/*  p:nth-child(odd) {
+    background-color: rgb(255, 246, 113);
+    border: 5px solid rgb(53, 11, 238);
+    
+    
+} */ 
+
+    /* LOS PARES*/
+article p{
+    background-color: rgb(255, 182, 182);
+/*     border: 3px solid rgb(255, 0, 0);*/
+} 
+    /* LOS PARES
+    article p:nth-child(1) {
+        background-color: rgb(255, 148, 148);
+         border: 3px solid rgb(255, 0, 0);
+    } */
