@@ -1,0 +1,25 @@
+.item{
+    font-size: 1.5rem;
+    font-style: italic;
+    text-align: center
+}
+
+.parrafo{
+    background-color: rgb(148, 173, 173)
+}
+
+.divClass{
+    background-color: rgb(228, 119, 47)
+}
+h1{
+    margin: 2rem;
+	padding: 2rem;
+	border: 2rem;
+	font-size: 100%;
+	font: inherit;
+    vertical-align: baseline;
+    color: #955;
+}
+.menu{
+    list-style: none;
+}
