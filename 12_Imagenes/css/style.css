@@ -1,0 +1,10 @@
+figure{
+    width: 50%;
+    max-width: 300px;
+    border: 5px solid;
+    background-color: aqua;
+}
+img{
+    width: 100%;
+    display: block;
+}

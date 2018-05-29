@@ -1,0 +1,40 @@
+/*th, td{
+    padding: 1rem 2rem 3rem 4rem;
+}
+sentido aguja del reloj empieza por arriba*/
+th, td {
+    padding: 0.8rem 2rem; 
+}
+
+th {
+    background-color: maroon;
+    color: bisque
+
+}
+
+td {
+    background-color: bisque
+}
+
+table.destinos td:after {
+    content: "%"
+}
+
+table.destinos{
+    border-spacing: 0.25rem;
+    empty-cells: hide;
+}
+
+
+/* LOS IMPARES*/
+article table.destinos tr:nth-child(odd) td{
+    background-color: aqua;
+/*     border: 3px solid rgb(255, 0, 0);
+ */    
+    
+}
+/* LOS PARES*/
+article table.destinos tr:nth-child(even) td{
+    background-color: rgb(245, 136, 2);
+/*     border: 3px solid rgb(255, 0, 0);
+ */}
