@@ -1,4 +1,4 @@
-Proyecto Web Pais / Región
+Proyecto Web Pais / Región 
 Estructura HTML
 Head: elementos necesarios y todos los metadatos que conozcas
 Body: Estructuta semantica
