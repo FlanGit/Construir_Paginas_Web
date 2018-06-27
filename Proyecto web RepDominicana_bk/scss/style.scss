@@ -1,11 +1,11 @@
 @font-face { font-family: 'Perma';
     src: url('../assets/PermanentMarker-Regular.ttf')};
-*{
-        box-sizing: border-box;
+* {
+    box-sizing: border-box;
 }
 
 $color_main: #6CDFCE;
-$color_back: rgb(9, 143, 253;
+$color_back: rgb(9, 143, 253);
 
 
 body, h1, h2, figure, nav ul, nav li{
@@ -13,28 +13,51 @@ body, h1, h2, figure, nav ul, nav li{
     padding: 0;
 }
 
-header{
-    background-color:$color_main;
+header section{
+        background-color:$color_main;
+        height: 100%;
+        
+        .divImg{
+            width: 20%;
+           display: block;
 
-    .menu{
-        display: flex;
-  
-        div.h1Nombre {    
-            height: 20vh;
-            margin-top: auto;
-            margin-bottom: auto;
-            width: 60%;
-            color: $color_back;
-            font-family: Perma, cursive;
-            font-size: 2rem;
-            text-align: center;
+        }  
+
+        img{
+           width: 100%; 
         }
+    
+    
+   /*  position: relative; */
+/*     .menu{
+        display: flex;
+        
+
+
+        h1{
+
+        }
+                                div{
+                                    width:100%;
+
+                                }
+                        
+                                div.h1Nombre {    
+                                    margin-top: auto;
+                                    margin-bottom: auto;
+                                    width: 30%;
+                                    color: $color_back;
+                                    font-family: Perma, cursive;
+                                    font-size: 2rem;
+                                    text-align: center;
+                                }
 
         nav {
             position: absolute;
-            top: 45vh;
+            top: 90%;
             right: 0;
             display: block;
+            width: 30%;
         
             ul {
                 list-style: none;
@@ -46,10 +69,10 @@ header{
             a {
                 color: inherit;
                 text-decoration: none;
-                padding: 0.2rem 2rem;
+                padding: 0.2rem 0.3rem;
                 transition: all 0.8s linear;
             }
         }
-    }
+    } */
 }
 
