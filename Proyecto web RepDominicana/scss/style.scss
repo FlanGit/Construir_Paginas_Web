@@ -13,7 +13,7 @@ body, h1, h2, figure, nav ul, nav li{
     padding: 0;
 }
 body{
-
+  
     header{
         
         section {
@@ -22,7 +22,6 @@ body{
             display: flex;
             justify-content: space-between;
             align-items: center;
-
 
             .divImg{
                 width: 251px;
@@ -49,14 +48,89 @@ body{
             nav a{
                 padding-right: 1rem;
             }
+        }    
+        .divNav{       
+/*             display: none;*/
+            nav{
+                
+                width: 100%;
+                background-color: maroon;
+                color: bisque;
+                border-right: maroon 1px solid;
+
+                ul {
+                    list-style: none;
+                    margin: 0;
+                    padding: 0; 
+                    height: 4rem; 
+                    overflow: auto;
+                    width: 100%;
+                }
+
+                li {
+                    display: block;
+                    float: left;
+                    width: 15%;
+                }
+            
+                li:not(:last-child) {
+                    margin-right: 1.5%;
+                }
+            
+                a {
+                    display: inline-block;
+                    width: 100%;
+                    padding-top: 0.4rem;
+                    padding-bottom: 0.4rem;
+                    margin-top: 0.9rem;
+                    color: inherit;
+                    background-color: bisque;
+                    color: maroon;
+                    text-decoration: none;
+                    text-align: center;
+                    border: solid silver 1px;
+                    border-radius: 1rem;
+                }
+            
+            }
         }
-    }
+    }       
+  
+    main section {    
+        h2{
+            margin-left: 1rem;
+            padding-top : 1rem; 
+            padding-bottom : 1rem; 
+        }
 
-    .divNav{
-        font-size: 2rem;
-        display: none;
-    }
+        .mainDivImg{
+            width: 100%;
+            display: inline-block;
+            padding-left: 1rem;
+            img{
+                width: 100%; 
+                max-width: 600px;
+            }
+        }
+        .seccion-01{
+            padding-left: 1rem;
+            font-family: Roboto, Verdana, Arial, sans-serf;
+            p{
+                margin-left: 1rem;
+                margin-right: 1rem;
+            }
+            blockquote{
+                margin-left: 1rem;
+            }
+        }
 
+    }
+    
+}
+
+
+
+/* 
     .pagina_principal{
         h2{
             text-align: center;
@@ -66,7 +140,7 @@ body{
         }
     }
 
-    main section{      
+     main section{      
 
         div.mainDivImg{
             width: 100%;
@@ -83,47 +157,21 @@ body{
             background-color: #B2D1FF;
         }
   
-     /*    .mainDivImg{
-            width: 600px;
-            
-        } */
 
         img{
             width: 100%; 
             max-width: 600px;
         }
-
-        nav {
-            position: absolute;
-            top: 90%;
-            right: 0;
-            display: block;
-            width: 30%;
-        
-            ul {
-                list-style: none;
-                padding: 0; 
-            }
-            li{
-                display: inline-block;
-            }
-            a {
-                color: inherit;
-                text-decoration: none;
-                padding: 0.2rem 0.3rem;
-                transition: all 0.8s linear;
-            }
-        }
-
-
-
-
-
-
-
     } 
+ */   
    
-}
+
+
+/*    .mainDivImg{
+            width: 600px;
+            
+        } */
+
 /*
         nav.hide-menu {
             display: none;
@@ -162,4 +210,25 @@ body{
     
     */
 
-
+/*
+    nav {
+        position: absolute;
+        top: 90%;
+        right: 0;
+        display: block;
+        width: 30%;
+    
+        ul {
+            list-style: none;
+            padding: 0; 
+        }
+        li{
+            display: inline-block;
+        }
+        a {
+            color: inherit;
+            text-decoration: none;
+            padding: 0.2rem 0.3rem;
+            transition: all 0.8s linear;
+        }
+    }*/
