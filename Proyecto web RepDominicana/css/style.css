@@ -42,7 +42,7 @@ body header section nav a {
   padding-right: 1rem;
 }
 body header .divNav {
-  /*             display: none;*/
+  display: none;
 }
 body header .divNav nav {
   width: 100%;
