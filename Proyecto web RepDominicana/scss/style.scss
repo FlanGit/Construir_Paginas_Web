@@ -98,49 +98,42 @@ body{
         }
     }       
   
-    main section {    
-        h2{
-            margin-left: 1rem;
-            padding-top : 0.5rem; 
-            padding-bottom : 0.5rem; 
-           
-        }
-
-        .div_flex{
-            display: flex;
-        }
-        .mainDivImg{
-            width: 100%;
-            display: inline-block;
-            padding: 0;
-        }   
-        img{
-            width: 100%; 
-            max-width: 600px;
-        }
-        
-        .seccion-01{
-            padding-left: 1rem;
-            font-family: Roboto, Verdana, Arial, sans-serf; 
-            font-size: 1.3rem;
-            p{
+    main {
+        section {    
+            h2{
                 margin-left: 1rem;
-                margin-right: 1rem;
-            }
-            blockquote{
-                margin-left: 1rem;
-            }
-
-
+                padding-top : 0.5rem; 
+                padding-bottom : 0.5rem; 
             
+            }
 
-
-
+            .div_flex{
+                display: flex;
+                .mainDivImg{
+                    width: 100%;
+                    display: inline-block;
+                    padding: 0;
+                }   
+                img{
+                    width: 100%; 
+                    max-width: 600px;
+                }
+            }
+            .seccion-01{
+                padding-left: 1rem;
+                font-family: Roboto, Verdana, Arial, sans-serf; 
+                font-size: 1rem;
+                p{
+                    margin-left: 1rem;
+                    margin-right: 1rem;
+                }
+                blockquote{
+                    margin-left: 2rem;
+                }
+            }
 
         }
-
-    }
-    main{
+    
 
         p.mailto {
             font-family: Arial, Helvetica, sans-serif, cursive;

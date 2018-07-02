@@ -82,6 +82,10 @@ body header .divNav nav a {
   padding: 0;
   border: 0;
 }
+body main {
+  /* LOS IMPARES*/
+  /* LOS PARES*/
+}
 body main section h2 {
   margin-left: 1rem;
   padding-top: 0.5rem;
@@ -90,30 +94,26 @@ body main section h2 {
 body main section .div_flex {
   display: flex;
 }
-body main section .mainDivImg {
+body main section .div_flex .mainDivImg {
   width: 100%;
   display: inline-block;
   padding: 0;
 }
-body main section img {
+body main section .div_flex img {
   width: 100%;
   max-width: 600px;
 }
 body main section .seccion-01 {
   padding-left: 1rem;
   font-family: Roboto, Verdana, Arial, sans-serf;
-  font-size: 1.3rem;
+  font-size: 1rem;
 }
 body main section .seccion-01 p {
   margin-left: 1rem;
   margin-right: 1rem;
 }
 body main section .seccion-01 blockquote {
-  margin-left: 1rem;
-}
-body main {
-  /* LOS IMPARES*/
-  /* LOS PARES*/
+  margin-left: 2rem;
 }
 body main p.mailto {
   font-family: Arial, Helvetica, sans-serif, cursive;
