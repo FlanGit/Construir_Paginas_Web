@@ -180,6 +180,7 @@ body{
     }
 
     aside{
+        background-color: burlywood;
         margin: 1rem;
         font-size: 1.3rem;
         ul {
@@ -195,7 +196,7 @@ body{
     }
 
     footer {
-        
+        background-color: #CCCCCC;
         address{
             margin: 1rem;
             font-size: 1.3rem;
@@ -209,3 +210,31 @@ body{
 
     
 }
+
+@media screen and (min-width: 620px) {
+    h1 {
+      font-size: 5.3rem;
+      padding-left: 1rem;
+    }
+  
+    .wrapper_flex {
+      display: flex;
+    }
+    .wrapper_flex section {
+      padding-left: 1rem;
+      padding-right: 1rem;
+      flex: 0 1 75%;
+    }
+    .wrapper_flex aside {
+      padding-left: 1rem;
+      padding-right: 1rem;
+      flex: 0 1 25%;
+    }
+  
+    section figure {
+      margin: 0;
+    }
+    
+  
+
+  }

@@ -145,6 +145,7 @@ body main section .seccion-01 table.batallas tr:nth-child(even) td {
   border: 3px solid red;
 }
 body aside {
+  background-color: burlywood;
   margin: 1rem;
   font-size: 1.3rem;
 }
@@ -156,6 +157,9 @@ body details {
   margin: 1rem;
   font-size: 1.3rem;
 }
+body footer {
+  background-color: #CCCCCC;
+}
 body footer address {
   margin: 1rem;
   font-size: 1.3rem;
@@ -163,6 +167,33 @@ body footer address {
 body footer address p {
   margin: 1rem;
   font-size: 1.3rem;
+}
+
+@media screen and (min-width: 620px) {
+  h1 {
+    font-size: 5.3rem;
+    padding-left: 1rem;
+  }
+
+  .wrapper_flex {
+    display: flex;
+  }
+
+  .wrapper_flex section {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    flex: 0 1 75%;
+  }
+
+  .wrapper_flex aside {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    flex: 0 1 25%;
+  }
+
+  section figure {
+    margin: 0;
+  }
 }
 
 /*# sourceMappingURL=css/style.css.map */
