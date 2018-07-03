@@ -44,48 +44,6 @@ body header section nav a {
 body header .divNav {
   display: none;
 }
-body header .divNav nav {
-  width: 100%;
-  background-color: #6CDFCE;
-  color: bisque;
-}
-body header .divNav nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  border: 0;
-  height: 2rem;
-  width: 100%;
-}
-body header .divNav nav li {
-  display: block;
-  float: left;
-  width: 15%;
-  margin: 0;
-  padding: 0;
-  border: 0;
-}
-body header .divNav nav li:not(:last-child) {
-  margin-right: 1.5%;
-}
-body header .divNav nav a {
-  display: inline-block;
-  width: 100%;
-  color: inherit;
-  background-color: bisque;
-  color: maroon;
-  text-decoration: none;
-  text-align: center;
-  border-radius: 1rem;
-  font-size: 0.7rem;
-  margin: 0;
-  padding: 0;
-  border: 0;
-}
-body main {
-  /* LOS IMPARES*/
-  /* LOS PARES*/
-}
 body main section h2 {
   margin-left: 1rem;
   padding-top: 0.5rem;
@@ -101,19 +59,17 @@ body main section .div_flex .mainDivImg {
 }
 body main section .div_flex img {
   width: 100%;
-  max-width: 600px;
+  max-width: 1024px;
 }
-body main section .seccion-01 {
+body main section p {
   padding-left: 1rem;
-  font-family: Roboto, Verdana, Arial, sans-serf;
+  font-family: Arial, Helvetica, sans-serif, cursive;
   font-size: 1rem;
-}
-body main section .seccion-01 p {
   margin-left: 1rem;
   margin-right: 1rem;
 }
-body main section .seccion-01 blockquote {
-  margin-left: 2rem;
+body main section p blockquote {
+  margin-left: 1rem;
 }
 body main p.mailto {
   font-family: Arial, Helvetica, sans-serif, cursive;
@@ -136,11 +92,11 @@ body main table.batallas {
   empty-cells: hide;
   font-size: 1rem;
 }
-body main section .seccion-01 table.batallas tr:nth-child(odd) td {
+body main section table.batallas tr:nth-child(odd) td {
   background-color: #00a2ff;
   border: 3px solid #5c4848;
 }
-body main section .seccion-01 table.batallas tr:nth-child(even) td {
+body main section table.batallas tr:nth-child(even) td {
   background-color: #02f52a;
   border: 3px solid red;
 }
@@ -148,6 +104,8 @@ body aside {
   background-color: burlywood;
   margin: 1rem;
   font-size: 1.3rem;
+  padding-top: 1rem;
+  padding-left: 1rem;
 }
 body aside ul {
   list-style: none;
@@ -170,8 +128,8 @@ body footer address p {
 }
 
 @media screen and (min-width: 620px) {
-  h1 {
-    font-size: 5.3rem;
+  section .divh1 h1 {
+    font-size: 2.3rem;
     padding-left: 1rem;
   }
 
@@ -182,17 +140,66 @@ body footer address p {
   .wrapper_flex section {
     padding-left: 1rem;
     padding-right: 1rem;
-    flex: 0 1 75%;
+    flex: 0 1 65%;
   }
 
   .wrapper_flex aside {
     padding-left: 1rem;
     padding-right: 1rem;
-    flex: 0 1 25%;
+    flex: 0 1 35%;
   }
 
   section figure {
     margin: 0;
+  }
+}
+@media screen and (min-width: 820px) {
+  body header section h1 {
+    font-size: 2.5rem;
+  }
+  body header section .hamburger {
+    display: none;
+  }
+  body header .divNav {
+    display: block;
+  }
+  body header .divNav nav {
+    width: 100%;
+    background-color: #6CDFCE;
+    color: bisque;
+  }
+  body header .divNav nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    height: 2rem;
+    width: 100%;
+  }
+  body header .divNav nav li {
+    display: block;
+    float: left;
+    width: 8%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+  body header .divNav nav li:not(:last-child) {
+    margin-right: 1.5%;
+  }
+  body header .divNav nav a {
+    display: inline-block;
+    width: 100px;
+    color: inherit;
+    background-color: bisque;
+    color: maroon;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 1rem;
+    font-size: 1.3rem;
+    margin: 0;
+    padding: 0;
+    border: 0;
   }
 }
 

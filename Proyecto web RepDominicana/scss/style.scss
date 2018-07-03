@@ -45,59 +45,17 @@ body{
                 text-align: center;
 
             }
-            nav a{
+             nav a{
                 padding-right: 1rem;
-            }
+            }  
         }    
-        .divNav{       
-             display: none;
-            nav{
-                
-                width: 100%;
-                background-color: #6CDFCE;
-                color: bisque;
-                ul {
-                    list-style: none;
-                    margin: 0;
-                    padding: 0;      
-                    border:0 ;
-                    height: 2rem; 
-                    width: 100%;
-                }
+        .divNav{                         
+            display: none;
+  
 
-                li {
-                    display: block;
-                    float: left;
-                    width: 15%;
-                    margin: 0;
-                    padding: 0;
-                    border:0 ;
-                }
-            
-                li:not(:last-child) {
-                    margin-right: 1.5%;
-                }
-            
-                a {
-                    display: inline-block;
-                    width: 100%;
-                    color: inherit;
-                    background-color: bisque;
-                    color: maroon;
-                    text-decoration: none;
-                    text-align: center;
-                    border-radius: 1rem;
-                    font-size: 0.7rem;
-                    margin: 0;
-                    padding: 0;
-                    border:0 ;
-
-                }
-            
-            }
         }
     }       
-  
+   
     main {
         section {    
             h2{
@@ -106,7 +64,7 @@ body{
                 padding-bottom : 0.5rem; 
             
             }
-
+ 
             .div_flex{
                 display: flex;
                 .mainDivImg{
@@ -116,24 +74,24 @@ body{
                 }   
                 img{
                     width: 100%; 
-                    max-width: 600px;
-                }
-            }
-            .seccion-01{
-                padding-left: 1rem;
-                font-family: Roboto, Verdana, Arial, sans-serf; 
-                font-size: 1rem;
-                p{
-                    margin-left: 1rem;
-                    margin-right: 1rem;
-                }
-                blockquote{
-                    margin-left: 2rem;
+                    max-width: 1024px;
                 }
             }
 
+        }  
+        section p{
+            padding-left: 1rem;
+            font-family:  Arial, Helvetica, sans-serif, cursive;
+            font-size: 1rem;
+             
+                margin-left: 1rem;
+                margin-right: 1rem;
+             
+            blockquote{
+                margin-left: 1rem;
+            }
         }
-    
+
 
         p.mailto {
             font-family: Arial, Helvetica, sans-serif, cursive;
@@ -163,15 +121,15 @@ body{
         }
 
 
-        /* LOS IMPARES*/
-        section .seccion-01 table.batallas tr:nth-child(odd) td{
+       
+        section  table.batallas tr:nth-child(odd) td{
             background-color: rgb(0, 162, 255);
              border: 3px solid rgb(92, 72, 72);
             
             
         }
-        /* LOS PARES*/
-        section .seccion-01 table.batallas tr:nth-child(even) td{
+        
+        section  table.batallas tr:nth-child(even) td{
             background-color: rgb(2, 245, 42);
             border: 3px solid rgb(255, 0, 0);
         }
@@ -183,6 +141,8 @@ body{
         background-color: burlywood;
         margin: 1rem;
         font-size: 1.3rem;
+        padding-top: 1rem;        
+        padding-left: 1rem;
         ul {
             list-style: none;
             text-decoration: none;
@@ -207,13 +167,12 @@ body{
         }
     }
 
-
-    
+     
 }
 
 @media screen and (min-width: 620px) {
-    h1 {
-      font-size: 5.3rem;
+    section .divh1 h1 {
+      font-size: 2.3rem;
       padding-left: 1rem;
     }
   
@@ -223,12 +182,12 @@ body{
     .wrapper_flex section {
       padding-left: 1rem;
       padding-right: 1rem;
-      flex: 0 1 75%;
+      flex: 0 1 65%;
     }
     .wrapper_flex aside {
       padding-left: 1rem;
       padding-right: 1rem;
-      flex: 0 1 25%;
+      flex: 0 1 35%;
     }
   
     section figure {
@@ -238,3 +197,71 @@ body{
   
 
   }
+ 
+  
+@media screen and (min-width:820px ) {
+
+    body header{
+            section{    
+                h1{
+                    font-size: 2.5rem;
+                }
+
+                .hamburger{
+                    display: none;
+                }
+
+            }
+            .divNav{                         
+                display: block;
+                nav{
+                
+                    width: 100%;
+                    background-color: #6CDFCE;
+                    color: bisque;
+                    ul {
+                        list-style: none;
+                        margin: 0;
+                        padding: 0;      
+                        border:0 ;
+                        height: 2rem; 
+                        width: 100%;
+                    }
+    
+                    li {
+                        display: block;
+                        float: left;
+                        width: 8%;
+                        margin: 0;
+                        padding: 0;
+                        border:0 ;
+                    }
+                
+                    li:not(:last-child) {
+                        margin-right: 1.5%;
+                    }
+                
+                    a {
+                        display: inline-block;
+                        width: 100px;
+                        color: inherit;
+                        background-color: bisque;
+                        color: maroon;
+                        text-decoration: none;
+                        text-align: center;
+                        border-radius: 1rem;
+                        font-size: 1.3rem;
+                        margin: 0;
+                        padding: 0;
+                        border:0 ;
+    
+                    }
+                
+                }
+    
+            
+            
+            }
+    }
+
+}
