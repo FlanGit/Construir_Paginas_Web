@@ -4,9 +4,10 @@
     padding: 2rem;
     border-radius: 2rem;
 }
-
+ 
 div.boton:hover {
-    color: maroon;
+    color: rgb(245, 241, 241);
+    background-color: maroon;
 }
 
 section.parte1 p::first-letter {
@@ -23,7 +24,7 @@ section.parte1 blockquote {
 }
 
 section.parte1 blockquote::before {
-    content: url(../img/mundo.png) open-quote;
+    content: url(./mundo.png) open-quote;
     
 }
 
