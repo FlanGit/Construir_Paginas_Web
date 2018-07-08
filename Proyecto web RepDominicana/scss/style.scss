@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-$color_main: #6CDFCE;
+$color_main: #6CDFCE; 
 $color_back: rgb(9, 33, 253);
 
 
@@ -15,8 +15,9 @@ body, section, h1, h2, figure, nav ul, nav li{
 
 body{
     header{
-        background-color: $color_main;
-        color: $color_back;
+        background: linear-gradient(to bottom, blue, white, red);
+/*         background-color: $color_main; 
+ */        color: $color_back;
 
         nav{
             width: 100%;   
@@ -39,7 +40,8 @@ body{
                 max-width: 251px;
             }
             h1{
-            color: $color_back;
+
+            /* color: $color_back; */
             font-family: Perma, cursive;
             font-size: 1.8rem;
             text-align: center;
@@ -47,12 +49,11 @@ body{
             }    
         }  
     }    
+  
+    nav.menu-mobile {
 
-    nav.menu-mobile,
-    nav.menu-desk {
-
-        /* background-color: $color_main;
-        color: $color_back; */
+        background-color: $color_main;
+        color: $color_back; 
         a {
             padding-top: 0.5rem;
             padding-bottom: 0.5rem;
@@ -87,10 +88,12 @@ body{
                 }   
                 img{
                     width: 100%; 
-                   /*  max-width: 1024px; */
                 }
             }
-
+            #geografia img{display: flex;
+                    max-width: 642px; 
+                }
+          
             blockquote{
                 margin: 1rem ;
                 margin-top: 0 ;
@@ -248,19 +251,19 @@ body{
             }
         }
 
-        nav.hide-menu{
+        nav.menu-desk{
             display: block;
             position: absolute;
             right: 0;
-            top: 7.8rem;
+            top: 7rem;
+        
             ul{
                 display: flex;
                 list-style: none;
-                li{
-/*                     background-color: $color_main;
- */                    a {
-                        text-decoration: none;
 
+                li{
+                    a {
+                        text-decoration: none;
                         padding: 0.5rem  1rem;
                         display: block;
                         &:hover {

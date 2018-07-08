@@ -12,7 +12,9 @@ body, section, h1, h2, figure, nav ul, nav li {
 }
 
 body header {
-  background-color: #6CDFCE;
+  background: linear-gradient(to bottom, blue, white, red);
+  /*         background-color: $color_main; 
+   */
   color: #0921fd;
 }
 body header nav {
@@ -34,26 +36,23 @@ body header section img {
   max-width: 251px;
 }
 body header section h1 {
-  color: #0921fd;
+  /* color: $color_back; */
   font-family: Perma, cursive;
   font-size: 1.8rem;
   text-align: center;
   padding-top: 2px;
 }
-body nav.menu-mobile,
-body nav.menu-desk {
-  /* background-color: $color_main;
-  color: $color_back; */
+body nav.menu-mobile {
+  background-color: #6CDFCE;
+  color: #0921fd;
 }
-body nav.menu-mobile a,
-body nav.menu-desk a {
+body nav.menu-mobile a {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   padding-left: 1rem;
   display: block;
 }
-body nav.menu-mobile a:hover,
-body nav.menu-desk a:hover {
+body nav.menu-mobile a:hover {
   background-color: #0921fd;
   color: #6CDFCE;
 }
@@ -75,7 +74,10 @@ body main section .div_flex .mainDivImg {
 }
 body main section .div_flex img {
   width: 100%;
-  /*  max-width: 1024px; */
+}
+body main section #geografia img {
+  display: flex;
+  max-width: 642px;
 }
 body main section blockquote {
   margin: 1rem;
@@ -190,26 +192,22 @@ body footer p {
   body header nav {
     display: none;
   }
-  body nav.hide-menu {
+  body nav.menu-desk {
     display: block;
     position: absolute;
     right: 0;
-    top: 7.8rem;
+    top: 7rem;
   }
-  body nav.hide-menu ul {
+  body nav.menu-desk ul {
     display: flex;
     list-style: none;
   }
-  body nav.hide-menu ul li {
-    /*                     background-color: $color_main;
-     */
-  }
-  body nav.hide-menu ul li a {
+  body nav.menu-desk ul li a {
     text-decoration: none;
     padding: 0.5rem 1rem;
     display: block;
   }
-  body nav.hide-menu ul li a:hover {
+  body nav.menu-desk ul li a:hover {
     background-color: #947a5d;
     color: white;
     border-radius: 1rem;
