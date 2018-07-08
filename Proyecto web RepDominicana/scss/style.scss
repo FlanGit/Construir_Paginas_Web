@@ -5,24 +5,30 @@
 }
 
 $color_main: #6CDFCE;
-$color_back: rgb(9, 143, 253);
+$color_back: rgb(9, 33, 253);
 
 
-body, h1, h2, figure, nav ul, nav li{
+body, section, h1, h2, figure, nav ul, nav li{
     margin: 0;
     padding: 0;
 }
-body{
-  
-    header{
-        
-        section {
-            background-color:$color_main;
-            height: 100%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
 
+body{
+    header{
+        background-color: $color_main;
+        color: $color_back;
+
+        nav{
+            width: 100%;   
+            align-items: center;
+            padding-left: 95%;
+            padding-top: 0.5rem;
+        }
+    
+        section{  
+    
+            display: flex;
+    
             .divImg{
                 width: 251px;
                 display: inline-block;
@@ -32,29 +38,37 @@ body{
                 width: 100%; 
                 max-width: 251px;
             }
-
-            .divH1{
-                width: 100%;
-                display: inline-block;
-            }  
             h1{
-                width: 100%;             
-                color: $color_back;
-                font-family: Perma, cursive;
-                font-size: 1.5rem;
-                text-align: center;
+            color: $color_back;
+            font-family: Perma, cursive;
+            font-size: 1.8rem;
+            text-align: center;
+            padding-top: 2px;
+            }    
+        }  
+    }    
 
+    nav.menu-mobile,
+    nav.menu-desk {
+
+        /* background-color: $color_main;
+        color: $color_back; */
+        a {
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
+            padding-left: 1rem;
+            display: block;
+
+            &:hover {      
+                background-color: $color_back;
+                color: $color_main;
             }
-             nav a{
-                padding-right: 1rem;
-            }  
-        }    
-        .divNav{                         
-            display: none;
-  
+        }  
+    }
 
-        }
-    }       
+    nav.hide-menu{
+        display: none;
+    }
    
     main {
         section {    
@@ -62,9 +76,8 @@ body{
                 margin-left: 1rem;
                 padding-top : 0.5rem; 
                 padding-bottom : 0.5rem; 
-            
             }
- 
+
             .div_flex{
                 display: flex;
                 .mainDivImg{
@@ -74,24 +87,61 @@ body{
                 }   
                 img{
                     width: 100%; 
-                    max-width: 1024px;
+                   /*  max-width: 1024px; */
                 }
             }
 
-        }  
-        section p{
-            padding-left: 1rem;
-            font-family:  Arial, Helvetica, sans-serif, cursive;
-            font-size: 1rem;
-             
-                margin-left: 1rem;
-                margin-right: 1rem;
-             
             blockquote{
-                margin-left: 1rem;
+                margin: 1rem ;
+                margin-top: 0 ;
+                p{
+                    font-family:  Arial, Helvetica, sans-serif, cursive;
+                    font-size: 1rem;
+                    margin: 1rem;
+                    margin-right: 1rem;
+                }
+            }
+            
+            p{
+                margin-left: 0.5rem;
+            }
+            
+            
+            th, td {
+                padding: 1px auto;                 
+
+            }
+
+            th {
+                background-color: rgb(255, 78, 78);
+                color: rgb(255, 255, 255);
+                border: 3px solid rgb(97, 49, 124);
+
+            }
+
+            td {
+                background-color: rgb(182, 100, 0)
+            }
+
+            table.batallas{
+                border-spacing: 0;
+                empty-cells: hide;            
+                font-size: 1rem;
+
+            }
+        
+            table.batallas tr:nth-child(odd) td{
+                background-color: rgb(255, 78, 78);
+                border: 3px solid rgb(97, 49, 124);
+                
+                
+            }
+            
+            table.batallas tr:nth-child(even) td{
+                background-color: rgb(2, 245, 42);
+                border: 3px solid rgb(97, 49, 124);
             }
         }
-
 
         p.mailto {
             font-family: Arial, Helvetica, sans-serif, cursive;
@@ -99,41 +149,6 @@ body{
             margin-left: 1rem;
             padding: 0;
         }
-        
-        th, td {
-            padding: 1px auto; 
-        }
-
-        th {
-            background-color: rgb(129, 48, 48);
-            color: bisque
-        }
-
-        td {
-            background-color: bisque
-        }
-
-        table.batallas{
-            border-spacing: 1px;
-            empty-cells: hide;            
-            font-size: 1rem;
-
-        }
-
-
-       
-        section  table.batallas tr:nth-child(odd) td{
-            background-color: rgb(0, 162, 255);
-             border: 3px solid rgb(92, 72, 72);
-            
-            
-        }
-        
-        section  table.batallas tr:nth-child(even) td{
-            background-color: rgb(2, 245, 42);
-            border: 3px solid rgb(255, 0, 0);
-        }
-
 
     }
 
@@ -146,122 +161,121 @@ body{
         ul {
             list-style: none;
             text-decoration: none;
+            li{
+                padding-top: 0.5rem;        
+            }
         }
 
     }
-    details{
 
+    details{
         margin: 1rem;
         font-size: 1.3rem;
     }
 
-    footer {
+    footer {        
+        border-top: 2px solid;
+        margin-top: 1rem;
+        padding-bottom: 1rem;
+        padding-top: 1rem;        
+        text-align: center;
         background-color: #CCCCCC;
         address{
-            margin: 1rem;
+            margin: 0.4rem;
             font-size: 1.3rem;
-            p{
-                margin: 1rem;
-                font-size: 1.3rem;    
-            }
+        }
+        p{
+            margin: 0;
         }
     }
-
      
 }
 
-@media screen and (min-width: 620px) {
-    section .divh1 h1 {
-      font-size: 2.3rem;
-      padding-left: 1rem;
-    }
-  
-    .wrapper_flex {
-      display: flex;
-    }
-    .wrapper_flex section {
-      padding-left: 1rem;
-      padding-right: 1rem;
-      flex: 0 1 65%;
-    }
-    .wrapper_flex aside {
-      padding-left: 1rem;
-      padding-right: 1rem;
-      flex: 0 1 35%;
-    }
-  
-    section figure {
-      margin: 0;
-    }
+//- ****************************************************************** //
+@media screen and (min-width: 370px) {
+    body {
+        header{
     
+            section h1 { padding: 0;
+                font-size: 2.5rem;
+                padding-left: 1.5rem;
+               /*  color: $color_back; */
+                padding-top: 2.3rem;
+            } 
+        }
   
+        .main_aside_flex {
+        
+            display: flex;
+            
+            main {
+                padding-left: 1rem;
+                padding-right: 1rem;
+                flex: 1 1 85%;
+                background-color: rgb(148, 122, 93);
 
-  }
- 
-  
-@media screen and (min-width:820px ) {
-
-    body header{
-            section{    
-                h1{
-                    font-size: 2.5rem;
-                }
-
-                .hamburger{
-                    display: none;
-                }
-
+                }   
+            aside {
+                padding-left: 1rem;
+                padding-right: 1rem;
+                flex: 1 1 15%;
+                margin-top: 0;
+                margin-bottom: 0;
             }
-            .divNav{                         
-                display: block;
-                nav{
-                
-                    width: 100%;
-                    background-color: #6CDFCE;
-                    color: bisque;
-                    ul {
-                        list-style: none;
-                        margin: 0;
-                        padding: 0;      
-                        border:0 ;
-                        height: 2rem; 
-                        width: 100%;
-                    }
+        }
+    }
+}
     
-                    li {
-                        display: block;
-                        float: left;
-                        width: 8%;
-                        margin: 0;
-                        padding: 0;
-                        border:0 ;
-                    }
-                
-                    li:not(:last-child) {
-                        margin-right: 1.5%;
-                    }
-                
-                    a {
-                        display: inline-block;
-                        width: 100px;
-                        color: inherit;
-                        background-color: bisque;
-                        color: maroon;
+   
+@media screen and (min-width:790px ) {
+
+    body{ 
+
+        header{
+            
+            section h1{ padding: 0;
+                font-size: 4.5rem;
+                padding-left: 1.5rem;
+             /*    color: blueviolet; */
+                padding-top: 1.3rem;
+            } 
+
+
+
+
+            nav{
+                display:none;
+            }
+        }
+
+        nav.hide-menu{
+            display: block;
+            position: absolute;
+            right: 0;
+            top: 7.8rem;
+            ul{
+                display: flex;
+                list-style: none;
+                li{
+/*                     background-color: $color_main;
+ */                    a {
                         text-decoration: none;
-                        text-align: center;
-                        border-radius: 1rem;
-                        font-size: 1.3rem;
-                        margin: 0;
-                        padding: 0;
-                        border:0 ;
-    
-                    }
-                
-                }
-    
-            
-            
-            }
-    }
 
+                        padding: 0.5rem  1rem;
+                        display: block;
+                        &:hover {
+                            background-color: rgb(148, 122, 93) ;
+                            color: rgb(255, 255, 255);
+                            border-radius: 1rem;
+                        }
+                    }  
+                }
+            }
+
+        }
+        .menu-mobile{
+            display:none;
+        }
+        
+    }
 }

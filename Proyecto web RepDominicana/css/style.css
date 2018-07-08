@@ -6,17 +6,23 @@
   box-sizing: border-box;
 }
 
-body, h1, h2, figure, nav ul, nav li {
+body, section, h1, h2, figure, nav ul, nav li {
   margin: 0;
   padding: 0;
 }
 
-body header section {
+body header {
   background-color: #6CDFCE;
-  height: 100%;
-  display: flex;
-  justify-content: space-between;
+  color: #0921fd;
+}
+body header nav {
+  width: 100%;
   align-items: center;
+  padding-left: 95%;
+  padding-top: 0.5rem;
+}
+body header section {
+  display: flex;
 }
 body header section .divImg {
   width: 251px;
@@ -27,21 +33,31 @@ body header section img {
   width: 100%;
   max-width: 251px;
 }
-body header section .divH1 {
-  width: 100%;
-  display: inline-block;
-}
 body header section h1 {
-  width: 100%;
-  color: #098ffd;
+  color: #0921fd;
   font-family: Perma, cursive;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   text-align: center;
+  padding-top: 2px;
 }
-body header section nav a {
-  padding-right: 1rem;
+body nav.menu-mobile,
+body nav.menu-desk {
+  /* background-color: $color_main;
+  color: $color_back; */
 }
-body header .divNav {
+body nav.menu-mobile a,
+body nav.menu-desk a {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+  display: block;
+}
+body nav.menu-mobile a:hover,
+body nav.menu-desk a:hover {
+  background-color: #0921fd;
+  color: #6CDFCE;
+}
+body nav.hide-menu {
   display: none;
 }
 body main section h2 {
@@ -59,46 +75,50 @@ body main section .div_flex .mainDivImg {
 }
 body main section .div_flex img {
   width: 100%;
-  max-width: 1024px;
+  /*  max-width: 1024px; */
 }
-body main section p {
-  padding-left: 1rem;
+body main section blockquote {
+  margin: 1rem;
+  margin-top: 0;
+}
+body main section blockquote p {
   font-family: Arial, Helvetica, sans-serif, cursive;
   font-size: 1rem;
-  margin-left: 1rem;
+  margin: 1rem;
   margin-right: 1rem;
 }
-body main section p blockquote {
-  margin-left: 1rem;
+body main section p {
+  margin-left: 0.5rem;
+}
+body main section th, body main section td {
+  padding: 1px auto;
+}
+body main section th {
+  background-color: #ff4e4e;
+  color: white;
+  border: 3px solid #61317c;
+}
+body main section td {
+  background-color: #b66400;
+}
+body main section table.batallas {
+  border-spacing: 0;
+  empty-cells: hide;
+  font-size: 1rem;
+}
+body main section table.batallas tr:nth-child(odd) td {
+  background-color: #ff4e4e;
+  border: 3px solid #61317c;
+}
+body main section table.batallas tr:nth-child(even) td {
+  background-color: #02f52a;
+  border: 3px solid #61317c;
 }
 body main p.mailto {
   font-family: Arial, Helvetica, sans-serif, cursive;
   font-size: 1rem;
   margin-left: 1rem;
   padding: 0;
-}
-body main th, body main td {
-  padding: 1px auto;
-}
-body main th {
-  background-color: #813030;
-  color: bisque;
-}
-body main td {
-  background-color: bisque;
-}
-body main table.batallas {
-  border-spacing: 1px;
-  empty-cells: hide;
-  font-size: 1rem;
-}
-body main section table.batallas tr:nth-child(odd) td {
-  background-color: #00a2ff;
-  border: 3px solid #5c4848;
-}
-body main section table.batallas tr:nth-child(even) td {
-  background-color: #02f52a;
-  border: 3px solid red;
 }
 body aside {
   background-color: burlywood;
@@ -111,95 +131,91 @@ body aside ul {
   list-style: none;
   text-decoration: none;
 }
+body aside ul li {
+  padding-top: 0.5rem;
+}
 body details {
   margin: 1rem;
   font-size: 1.3rem;
 }
 body footer {
+  border-top: 2px solid;
+  margin-top: 1rem;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  text-align: center;
   background-color: #CCCCCC;
 }
 body footer address {
-  margin: 1rem;
+  margin: 0.4rem;
   font-size: 1.3rem;
 }
-body footer address p {
-  margin: 1rem;
-  font-size: 1.3rem;
+body footer p {
+  margin: 0;
 }
 
-@media screen and (min-width: 620px) {
-  section .divh1 h1 {
-    font-size: 2.3rem;
-    padding-left: 1rem;
+@media screen and (min-width: 370px) {
+  body header section h1 {
+    padding: 0;
+    font-size: 2.5rem;
+    padding-left: 1.5rem;
+    /*  color: $color_back; */
+    padding-top: 2.3rem;
   }
-
-  .wrapper_flex {
+  body .main_aside_flex {
     display: flex;
   }
-
-  .wrapper_flex section {
+  body .main_aside_flex main {
     padding-left: 1rem;
     padding-right: 1rem;
-    flex: 0 1 65%;
+    flex: 1 1 85%;
+    background-color: #947a5d;
   }
-
-  .wrapper_flex aside {
+  body .main_aside_flex aside {
     padding-left: 1rem;
     padding-right: 1rem;
-    flex: 0 1 35%;
-  }
-
-  section figure {
-    margin: 0;
+    flex: 1 1 15%;
+    margin-top: 0;
+    margin-bottom: 0;
   }
 }
-@media screen and (min-width: 820px) {
+@media screen and (min-width: 790px) {
   body header section h1 {
-    font-size: 2.5rem;
+    padding: 0;
+    font-size: 4.5rem;
+    padding-left: 1.5rem;
+    /*    color: blueviolet; */
+    padding-top: 1.3rem;
   }
-  body header section .hamburger {
+  body header nav {
     display: none;
   }
-  body header .divNav {
+  body nav.hide-menu {
     display: block;
+    position: absolute;
+    right: 0;
+    top: 7.8rem;
   }
-  body header .divNav nav {
-    width: 100%;
-    background-color: #6CDFCE;
-    color: bisque;
-  }
-  body header .divNav nav ul {
+  body nav.hide-menu ul {
+    display: flex;
     list-style: none;
-    margin: 0;
-    padding: 0;
-    border: 0;
-    height: 2rem;
-    width: 100%;
   }
-  body header .divNav nav li {
-    display: block;
-    float: left;
-    width: 8%;
-    margin: 0;
-    padding: 0;
-    border: 0;
+  body nav.hide-menu ul li {
+    /*                     background-color: $color_main;
+     */
   }
-  body header .divNav nav li:not(:last-child) {
-    margin-right: 1.5%;
-  }
-  body header .divNav nav a {
-    display: inline-block;
-    width: 100px;
-    color: inherit;
-    background-color: bisque;
-    color: maroon;
+  body nav.hide-menu ul li a {
     text-decoration: none;
-    text-align: center;
+    padding: 0.5rem 1rem;
+    display: block;
+  }
+  body nav.hide-menu ul li a:hover {
+    background-color: #947a5d;
+    color: white;
     border-radius: 1rem;
-    font-size: 1.3rem;
-    margin: 0;
-    padding: 0;
-    border: 0;
+  }
+  body .menu-mobile {
+    display: none;
   }
 }
 
